@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ref name
-        run: echo "${{github.ref_name}}
+        run: echo "${{github.ref_name}}"
       - name: Get code
         uses: actions/checkout@v4
       - name: Cache dependencies
