@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+
+run-name: ${{ github.workflow }} - ${{ github.event_name == 'schedule' && vars.DEV_BRANCH || github.ref_name  }}
 jobs:
   lint:
     runs-on: ubuntu-latest

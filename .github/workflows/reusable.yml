@@ -10,7 +10,7 @@ on:
     outputs:
       result:
         description: value of the workflow result
-        value: ${{ jobs.deploy.outputs.outcome }}
+        value: ${{ jobs.deploy.outputs.outcome }} # outcome - name of the output variable in the deploy job
   # secrets:
     #   some-secret:
     #     required: true
