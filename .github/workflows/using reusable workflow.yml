@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Ref name
         run: echo "${{github.ref_name}}"
+      - name: branch name
+        run: echo "${{vars.MAIN}}"
       - name: Get code
         uses: actions/checkout@v4
       - name: Cache dependencies
